@@ -23,7 +23,34 @@
         toolbar {
             background-color: #e50076!important;
         }
-        button.open-button
+
+
+button.export-button span.name {
+  visibility: hidden;
+}
+button.export-button span.name:after {
+  content: 'Guardar';
+  visibility: visible;
+  display: block;
+  position: absolute;
+    padding: 5px;
+      top: -4px;
+        margin-left: 30px;
+}
+        
+button.open-button span.name {
+  visibility: hidden;
+}
+button.open-button span.name:after {
+  content: 'Abrir';
+  visibility: visible;
+  display: block;
+  position: absolute;
+    padding: 5px;
+      top: -4px;
+        margin-left: 30px;
+}
+
 	</style>
 </head>
 <body>
