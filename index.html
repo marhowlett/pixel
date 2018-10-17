@@ -17,13 +17,71 @@
         button.control-button:nth-child(1n+9) { 
            visibility: hidden;
         }
-        button.control-button:nth-child(8) { 
-            visibility: visible;
+        button.control-button:nth-child(8) span.name { 
+            visibility: hidden;
+        }
+        button.control-button:nth-child(8) span.name:after { 
+             content: 'Texto';
+  visibility: visible;
+  display: block;
+  position: absolute;
+    padding: 5px;
+          top: 68px;
         }
         toolbar {
+   
             background-color: #e50076!important;
         }
-
+        .mat-flat-button  {
+   background-color: #e50076!important;
+}
+        .mat-flat-button  {
+   visibility: hidden;
+}
+        .mat-flat-button:after  {
+            background-color: #e50076!important;
+           content: 'Abrir foto';
+  visibility: visible;
+  display: block;
+  position: absolute;
+       padding: 5px;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-top: -40px;
+    margin-left: -20px;
+}
+        .mat-stroked-button {
+            color: #e50076!important;
+        }
+        .mat-stroked-button {
+           visibility: hidden;
+        }
+        .mat-stroked-button:after {
+           border-color: #e50076;
+   border-width: 1px;
+   border-style: solid;
+           content: 'Crear uno nuevo';
+  visibility: visible;
+  display: block;
+  position: absolute;
+       padding: 5px;
+    margin-top: -40px;
+    margin-left: -20px;
+}
+            
+        
+      
+open-sample-image-panel h2 {
+    visibility: hidden;
+        }
+open-sample-image-panel h2:after {
+   content: 'Abra una foto o un diseño para empezar.';
+  visibility: visible;
+  display: block;
+  position: absolute;
+    padding: 5px;
+    margin-top: -30px;
+        }
 
 button.export-button span.name {
   visibility: hidden;
@@ -50,7 +108,20 @@ button.open-button span.name:after {
       top: -4px;
         margin-left: 30px;
 }
-
+        open-sample-image-panel .separator {
+        visibility: hidden;
+        }
+        open-sample-image-panel .separator:after {
+         content: 'O utilice una muestra';
+  visibility: visible;
+  display: block;
+  position: absolute;
+    padding: 5px;
+      top: -4px;
+       
+        }
+       
+        
 	</style>
 </head>
 <body>
