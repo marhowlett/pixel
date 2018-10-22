@@ -1,3 +1,7 @@
+<?php
+    /* Template Name: Pixie */ 
+    get_header();
+?>
 <html>
 <head>
 	<meta charset="utf-8">
@@ -14,6 +18,7 @@
         button.control-button:nth-child(-n+7) { 
            visibility: hidden;
         }
+        
         button.control-button:nth-child(1n+9) { 
            visibility: hidden;
         }
@@ -27,6 +32,29 @@
   position: absolute;
     padding: 5px;
           top: 68px;
+        }
+
+        button.mat-menu-item:nth-child(1) { 
+           visibility: hidden;
+        }
+
+div.mat-menu-content > button.mat-menu-item:nth-child(1):before{
+    visibility: visible;
+  display: block;
+  content: "poner imagen de fondo";
+}
+         button.mat-menu-item:nth-child(2) { 
+           visibility: hidden;
+        }
+
+div.mat-menu-content > button.mat-menu-item:nth-child(2):before{
+    visibility: visible;
+  display: block;
+  content: "Añadir mi logo";
+}
+                 button.mat-menu-item:nth-child(3) { 
+                     display: none;
+           visibility: hidden;
         }
         toolbar {
    
@@ -48,7 +76,8 @@
     padding-right: 20px;
     padding-left: 20px;
     margin-top: -40px;
-    margin-left: -20px;
+   
+    margin-left: 51px;
 }
         .mat-stroked-button {
             color: #e50076!important;
@@ -56,7 +85,7 @@
         .mat-stroked-button {
            visibility: hidden;
         }
-        .mat-stroked-button:after {
+ /*       .mat-stroked-button:after {
            border-color: #e50076;
    border-width: 1px;
    border-style: solid;
@@ -67,20 +96,25 @@
        padding: 5px;
     margin-top: -40px;
     margin-left: -20px;
-}
+}*/
             
-        
+      open-sample-image-panel {
+        padding: 30px!important;
+        }
       
 open-sample-image-panel h2 {
     visibility: hidden;
         }
 open-sample-image-panel h2:after {
-   content: 'Abra una foto o un diseño para empezar.';
+   content: 'Descarga nuestro material sin logo en tu  computadora y después presiona abrir imagen';
   visibility: visible;
   display: block;
   position: absolute;
+    max-width: 300px;
     padding: 5px;
-    margin-top: -30px;
+        margin-top: -70px;
+    margin-left: -18px;
+    font-size: 1.0em;
         }
 
 button.export-button span.name {
@@ -112,7 +146,7 @@ button.open-button span.name:after {
         visibility: hidden;
         }
         open-sample-image-panel .separator:after {
-         content: 'O utilice una muestra';
+         content: 'O selecciona uno de estos';
   visibility: visible;
   display: block;
   position: absolute;
@@ -164,3 +198,6 @@ button.open-button span.name:after {
 </script>
 </body>
 </html>
+  <?php 
+    get_footer();
+?>
